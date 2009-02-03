@@ -27,7 +27,7 @@
                 throw "Unrecognized service: " + service;
             $(this).attr('href', SERVICES[service].replace('{{url}}', options['url']).replace('{{title}}', options['title']));
             if (!!options['callback'])
-                $(this).bind('click', function(){ callback.call(this);});
+                $(this).bind('click', function(){ options['callback'].call(this);});
             if (options['new_window'])
                 $(this).bind('click', function(e){ e.preventDefault(); window.open(this.href);});
         });
