@@ -1,7 +1,7 @@
 jQuery Sharehelper
 ==================
 
-*David Zhou
+*David Zhou*
 
 usage
 -----
